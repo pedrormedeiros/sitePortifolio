@@ -1,0 +1,264 @@
+<!-- declaração de que o documento é em HTML, marcando o início do código-->
+<!DOCTYPE html>
+
+<!-- tag html lang: especifica o idioma da página-->
+<html lang="pt-BR">
+  <!--Tag head: não é visualizado no corpo (body) da página, 
+armazena os metadados-->
+
+  <head>
+    <!--Metadado UTF-8: considera um conjunto de caracteres presente no idioma
+    Português (acentuação, por exemplo)-->
+    <meta charset="UTF-8" />
+
+    <!--Metadado que possibilita a vizualização em navegador de dispotivo móvel-->
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+
+    <!-- Referencia o arquivo CSS, colocar na tag head -->
+    <link rel="stylesheet" href="style/style.css"
+    <!--Tag title: titulo da guia -->
+    <title>Pedro Rodrigues</title>
+  </head>
+
+  <!-- Tag body: Definir o corpo do documento (conteúdo a ser vizualizado)-->
+
+  <body>
+    <style>
+      @import url("https://fonts.googleapis.com/css2?family=Atkinson+Hyperlegible&family=PT+Serif+Caption&display=swap");
+    </style>
+
+    <!--Cabeçalho da página-->
+    <header>
+      <!--Inicio do menu-->
+
+      <!--Tag nav: Cria um seção de menu (navigation)-->
+      <nav>
+        <!--Tag ul: cria uma lista desordenada, enquanto a tag
+            ol cria uma lista ordenada-->
+        <ul id="menu">
+          <!-- Tag li: determina cada item -->
+
+          <!-- Tag a: possibilita que o texto seja clicável -->
+          <!-- href: determina o redirecionamento da página -->
+          <li><a href="#"> Início </a></li>
+          <li><a href="#sobremim"> Sobre mim </a></li>
+          <li><a href="#servicos"> Soluções em TI </a></li>
+          <li><a href="contato.html"> Contato </a></li>
+        </ul>
+      </nav>
+      <!--Fim do menu-->
+
+      <!-- Divisão em parte menor, dentro de uma seção, identificada pela
+        palavra "apresentação"-->
+      <div class="apresentacao">
+        <!-- Tag img: inserir imagem na página -->
+        <!--width significa largura-->
+        <!--heigth signifiaca altura-->
+        <div class="left">
+          <img
+            src="img/background.png"
+            width="55%"
+            heigth="auto"
+            alt="imagem com notebook"
+          />
+        </div>
+
+        <!--BANCO DE IMAGENS GRATUITO-->
+        <!--ACESSAR O SITE: https://unsplash.com/ -->
+        <!--ACESSAR O SITE: https://br.freepik.com/ -->
+        <div class="right">
+          <h2>Soluções tecnológicas em</h2>
+          <h1>redes de computadores e desenvolvimento web</h1>
+
+          <div>
+            <button class="btn btnContact">Entre em contato</button>
+          </div>
+        </div>
+      </div>
+
+      <!--Fim da seçao de apresentaçao-->
+    </header>
+
+    <section id="sobremim"> 
+
+      <h3>Sobre mim</h3>
+
+      <div class="containerSobreMim">
+       
+        <div class="left">
+          <p>
+            Lorem ipsum dolor sit amet consectetur adipisicing elit. A tenetur
+            eos earum quo amet adipisci modi, in quaerat debitis dolor alias
+            atque corporis ipsa numquam laudantium odit fugiat obcaecati optio!
+          </p>
+        </div>
+
+        <div class="right">
+         <!-- <iframe
+            width="560"
+            height="315"
+            src="https://www.youtube.com/embed/s25o9P5ehHo?si=6n1FhFq1rPi9kVy9"
+            title="YouTube video player"
+            frameborder="0"
+            allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share"
+            allowfullscreen
+          ></iframe>-->
+
+          <!--<video controls autoplay width="540" height="315">
+            <source src="img/PostMalone.mp4"> 
+          </video>-->
+
+          <div class="socialMedia">
+
+            <div>
+
+            <a href="https://api.whatsapp.com/send?phone=5511937546474" target="_blank">
+             <img src="img/RedesSociais/Whatsapp.png">
+            
+            </div>
+
+            <div>
+
+             <p>(11) 93754-6474</p>
+
+            </div>
+            </a>
+
+          </div>
+            
+          
+
+          
+
+            <div class="socialMedia">
+
+              <div>
+
+               <a href="https://github.com/pedrormedeiros" target="_blank">
+               <img src="img/RedesSociais/Github.png">
+
+              </div>
+
+              <div>
+
+               <p>github.com/pedrormedeiros</p>
+
+              </div>
+              </a>
+            </div>
+
+            <div class="socialMedia">
+
+              <div>
+
+               <a href="https://www.linkedin.com/in/pedro-rodrigues-945b68204/" target="_blank">
+               <img src="img/RedesSociais/Linkedin.png">
+
+              </div>
+
+              <div>
+
+               <p>linkedin.com/in/pedrorodrigues</p>
+
+              </div>
+              </a>
+            
+            </div>
+
+            <div class="socialMedia">
+              <div>
+
+               <a href="mailto:perodriigues39@gmail.com">
+               <img src="img/RedesSociais/Gmail.png">
+
+              </div>
+
+              <div>
+
+               <p>perodriigues39@gmail.com</p>
+               
+              </div>
+              </a>
+            </div>
+
+          </div>
+
+        </div>
+
+      </div>
+      
+    </section>
+
+    <!--Tags h1 ao h6: níveis de importância no corpo do site-->
+
+    <section id="servicos">
+      <!--Inicio da seçao de serviços em redes de computadores-->
+      <h3>Assistência em redes de computadores</h3>
+
+      <div class="containerServicos">
+        <div class="itemServico1">
+          <img src="img/MontagemPC/96px.png" />
+          <h2>Montagem e manutenção de computadores</h2>
+        </div>
+
+        <div class="itemServico2">
+          <img src="img/Redes/96px.png" />
+          <h2>Implementação e configuraçao de redes</h2>
+        </div>
+
+        <div class="itemServico3">
+          <img src="img/configuracaoSO/96px.png" />
+          <h2>Instalação e configuração de sistemas operacionais</h2>
+        </div>
+
+        <div class="itemServico4">
+          <img src="img/SegurancaInformacao64px.png" />
+          <h2>Segurança da informação e backup</h2>
+        </div>
+      </div>
+
+      <!--Fim da seçao de serviços em redes de computadores-->
+
+      <!--Inicio da seçao de serviços em desenvolvimento-->
+      <h3>Desenvolvimento e implementação de aplicativos</h3>
+      <div class="containerServicos">
+        <div class="itemServico5">
+          <img src="img/prototipacao/96px.png" />
+          <h2>Prototipação</h2>
+          <h2>de aplicações</h2>
+        </div>
+
+        <div class="itemServico6">
+          <img src="img/bancodeDados/96px.png" />
+          <h2>Estruturação e administração de banco de dados</h2>
+        </div>
+
+        <div class="itemServico7">
+          <img src="img/sistemaDesktop/96px.png" />
+          <h2>Desenvolvimento de sistema Desktop</h2>
+        </div>
+
+        <div class="itemServico8">
+          <img src="img/desenvolverSite/96px.png" />
+          <h2>Desenvolvimento e hospedagem de sites</h2>
+        </div>
+      </div>
+
+      <!--Fim da seçao de serviços em desenvolvimento-->
+    </section>
+
+    <!-- Tag hr: cria uma linha -->
+    <!--<hr> -->
+
+    <!--<h3> </h3>
+    <h4> Portifólio | Desenvolvedor Pedro Rodrigues</h4>
+    <h5> Portifólio | Desenvolvedor Pedro Rodrigues</h5>
+    <h6> Portifólio | Desenvolvedor Pedro Rodrigues</h6> -->
+
+    <!--Tag p: Representar o parágrafo -->
+
+    <!-- Inicio do rodape-->
+    <footer></footer>
+    <!--Fim do rodape-->
+  </body>
+</html>
