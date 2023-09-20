@@ -3,99 +3,118 @@
 
 <!-- tag html lang: especifica o idioma da página-->
 <html lang="pt-BR">
-  <!--Tag head: não é visualizado no corpo (body) da página, 
+<!--Tag head: não é visualizado no corpo (body) da página, 
 armazena os metadados-->
 
-  <head>
-    <!--Metadado UTF-8: considera um conjunto de caracteres presente no idioma
+<head>
+  <!--Metadado UTF-8: considera um conjunto de caracteres presente no idioma
     Português (acentuação, por exemplo)-->
-    <meta charset="UTF-8" />
+  <meta charset="UTF-8" />
 
-    <!--Metadado que possibilita a vizualização em navegador de dispotivo móvel-->
-    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <!--Metadado que possibilita a vizualização em navegador de dispotivo móvel-->
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
 
-    <!-- Referencia o arquivo CSS, colocar na tag head -->
-    <link rel="stylesheet" href="style/style.css"
-    <!--Tag title: titulo da guia -->
-    <title>Pedro Rodrigues</title>
-  </head>
+  <!-- Referencia o arquivo CSS, colocar na tag head -->
+  <!-- title: titulo da guia -->
+  <title>Pedro Rodrigues</title>
 
-  <!-- Tag body: Definir o corpo do documento (conteúdo a ser vizualizado)-->
+  <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.2/dist/css/bootstrap.min.css" rel="stylesheet"
+    integrity="sha384-T3c6CoIi6uLrA9TneNEoa7RxnatzjcDSCmG1MXxSR1GAsXEV/Dwwykc2MPK8M2HN" crossorigin="anonymous">
+  <link rel="stylesheet" href="style/style.css">
+</head>
 
-  <body>
-    <style>
-      @import url("https://fonts.googleapis.com/css2?family=Atkinson+Hyperlegible&family=PT+Serif+Caption&display=swap");
-    </style>
+<!-- Tag body: Definir o corpo do documento (conteúdo a ser vizualizado)-->
 
-    <!--Cabeçalho da página-->
-    <header>
-      <!--Inicio do menu-->
+<body>
+  <style>
+    @import url("https://fonts.googleapis.com/css2?family=Atkinson+Hyperlegible&family=PT+Serif+Caption&display=swap");
+  </style>
 
-      <!--Tag nav: Cria um seção de menu (navigation)-->
-      <nav>
-        <!--Tag ul: cria uma lista desordenada, enquanto a tag
-            ol cria uma lista ordenada-->
-        <ul id="menu">
-          <!-- Tag li: determina cada item -->
+  <!--Cabeçalho da página-->
 
-          <!-- Tag a: possibilita que o texto seja clicável -->
-          <!-- href: determina o redirecionamento da página -->
-          <li><a href="#"> Início </a></li>
-          <li><a href="#sobremim"> Sobre mim </a></li>
-          <li><a href="#servicos"> Soluções em TI </a></li>
-          <li><a href="contato.html"> Contato </a></li>
+
+  <!--Inicio do menu-->
+
+  <nav class="navbar navbar-expand-lg bg-body-tertiary">
+    <div class="container-fluid">
+      <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarNav"
+        aria-controls="navbarNav" aria-expanded="false" aria-label="Toggle navigation">
+        <span class="navbar-toggler-icon"></span>
+      </button>
+      <div class="collapse navbar-collapse navColor" id="navbarNav">
+        <ul class="navbar-nav" id="menu">
+          <li class="nav-item">
+            <a class="nav-link active" aria-current="page" href="#Inicio">Inicio</a>
+          </li>
+          <li class="nav-item">
+            <a class="nav-link" href="#sobremim">Sobre Mim</a>
+          </li>
+          <li class="nav-item">
+            <a class="nav-link" href="#servicos">Soluções em TI</a>
+          </li>
+          <li class="nav-item">
+            <a class="nav-link" href="#contato">Contato</a>
+          </li>
+
         </ul>
-      </nav>
-      <!--Fim do menu-->
+      </div>
+    </div>
+  </nav>
 
-      <!-- Divisão em parte menor, dentro de uma seção, identificada pela
+  <!--Fim do menu-->
+
+  <!-- Divisão em parte menor, dentro de uma seção, identificada pela
         palavra "apresentação"-->
-      <div class="apresentacao">
-        <!-- Tag img: inserir imagem na página -->
-        <!--width significa largura-->
-        <!--heigth signifiaca altura-->
-        <div class="left">
-          <img
-            src="img/background.png"
-            width="55%"
-            heigth="auto"
-            alt="imagem com notebook"
-          />
-        </div>
 
-        <!--BANCO DE IMAGENS GRATUITO-->
-        <!--ACESSAR O SITE: https://unsplash.com/ -->
-        <!--ACESSAR O SITE: https://br.freepik.com/ -->
-        <div class="right">
-          <h2>Soluções tecnológicas em</h2>
-          <h1>redes de computadores e desenvolvimento web</h1>
-
-          <div>
-            <button class="btn btnContact">Entre em contato</button>
-          </div>
-        </div>
+  <header>
+    <div class="apresentacao">
+      <!-- Tag img: inserir imagem na página -->
+      <!--width significa largura-->
+      <!--heigth signifiaca altura-->
+      <div class="left">
+        <img src="img/background.png" width="55%" heigth="auto" alt="imagem com notebook" />
       </div>
 
-      <!--Fim da seçao de apresentaçao-->
-    </header>
+      <!--BANCO DE IMAGENS GRATUITO-->
+      <!--ACESSAR O SITE: https://unsplash.com/ -->
+      <!--ACESSAR O SITE: https://br.freepik.com/ -->
+      <div class="right">
+        <h2>Soluções tecnológicas em</h2>
+        <h1>redes de computadores e desenvolvimento web</h1>
 
-    <section id="sobremim"> 
+        <div>
+          <a href="#contato">
+            <button class="btn btnContact">Entre em contato</button>
+          </a>
 
-      <h3>Sobre mim</h3>
-
-      <div class="containerSobreMim">
-       
-        <div class="left">
-          <h2>Pedro Rodrigues</h2>
-          <p>
-            Lorem ipsum dolor sit amet consectetur adipisicing elit. A tenetur
-            eos earum quo amet adipisci modi, in quaerat debitis dolor alias
-            atque corporis ipsa numquam laudantium odit fugiat obcaecati optio!
-          </p>
         </div>
 
-        <div class="right">
-         <!-- <iframe
+      </div>
+
+    </div>
+
+    <!--Fim da seçao de apresentaçao-->
+  </header>
+
+
+  <!--Inicio da seção sobre mim-->
+  <section id="sobremim">
+
+    <h3>Sobre mim</h3>
+
+    <div class="containerSobreMim">
+
+      <div class="left">
+        <h2>Pedro Rodrigues</h2>
+        <p>
+          Lorem ipsum dolor sit amet consectetur adipisicing elit. A tenetur
+          eos earum quo amet adipisci modi, in quaerat debitis dolor alias
+          atque corporis ipsa numquam laudantium odit fugiat obcaecati optio!
+        </p>
+      </div>
+
+      <div class="right">
+        <!-- <iframe
             width="560"
             height="315"
             src="https://www.youtube.com/embed/s25o9P5ehHo?si=6n1FhFq1rPi9kVy9"
@@ -105,161 +124,222 @@ armazena os metadados-->
             allowfullscreen
           ></iframe>-->
 
-          <!--<video controls autoplay width="540" height="315">
+        <!--<video controls autoplay width="540" height="315">
             <source src="img/PostMalone.mp4"> 
           </video>-->
 
-          <div class="socialMedia">
+        <div class="socialMedia">
 
-            <div>
+          <div>
 
             <a href="https://api.whatsapp.com/send?phone=5511937546474" target="_blank">
-             <img src="img/RedesSociais/Whatsapp.png">
-            
-            </div>
-
-            <div>
-
-             <p>(11) 93754-6474</p>
-
-            </div>
-            </a>
-
-          </div>
-            
-          
-
-          
-
-            <div class="socialMedia">
-
-              <div>
-
-               <a href="https://github.com/pedrormedeiros" target="_blank">
-               <img src="img/RedesSociais/Github.png">
-
-              </div>
-
-              <div>
-
-               <p>github.com/pedrormedeiros</p>
-
-              </div>
-              </a>
-            </div>
-
-            <div class="socialMedia">
-
-              <div>
-
-               <a href="https://www.linkedin.com/in/pedro-rodrigues-945b68204/" target="_blank">
-               <img src="img/RedesSociais/Linkedin.png">
-
-              </div>
-
-              <div>
-
-               <p>linkedin.com/in/pedrorodrigues</p>
-
-              </div>
-              </a>
-            
-            </div>
-
-            <div class="socialMedia">
-              <div>
-
-               <a href="mailto:perodriigues39@gmail.com">
-               <img src="img/RedesSociais/Gmail.png">
-
-              </div>
-
-              <div>
-
-               <p>perodriigues39@gmail.com</p>
-               
-              </div>
-              </a>
-            </div>
+              <img src="img/RedesSociais/Whatsapp.png">
 
           </div>
 
+          <div>
+
+            <p>(11) 93754-6474</p>
+
+          </div>
+          </a>
+
+        </div>
+
+
+
+
+
+        <div class="socialMedia">
+
+          <div>
+
+            <a href="https://github.com/pedrormedeiros" target="_blank">
+              <img src="img/RedesSociais/Github.png">
+
+          </div>
+
+          <div>
+
+            <p>github.com/pedrormedeiros</p>
+
+          </div>
+          </a>
+        </div>
+
+        <div class="socialMedia">
+
+          <div>
+
+            <a href="https://www.linkedin.com/in/pedro-rodrigues-945b68204/" target="_blank">
+              <img src="img/RedesSociais/Linkedin.png">
+
+          </div>
+
+          <div>
+
+            <p>linkedin.com/in/pedrorodrigues</p>
+
+          </div>
+          </a>
+
+        </div>
+
+        <div class="socialMedia">
+          <div>
+
+            <a href="mailto:perodriigues39@gmail.com">
+              <img src="img/RedesSociais/Gmail.png">
+
+          </div>
+
+          <div>
+
+            <p>perodriigues39@gmail.com</p>
+
+          </div>
+          </a>
         </div>
 
       </div>
-      
-    </section>
 
-    <!--Tags h1 ao h6: níveis de importância no corpo do site-->
+    </div>
 
-    <section id="servicos">
-      <!--Inicio da seçao de serviços em redes de computadores-->
-      <h3>Assistência em redes de computadores</h3>
+    </div>
 
-      <div class="containerServicos">
-        <div class="itemServico1">
-          <img src="img/MontagemPC/96px.png" />
-          <h2>Montagem e manutenção de computadores</h2>
-        </div>
+  </section>
 
-        <div class="itemServico2">
-          <img src="img/Redes/96px.png" />
-          <h2>Implementação e configuraçao de redes</h2>
-        </div>
 
-        <div class="itemServico3">
-          <img src="img/configuracaoSO/96px.png" />
-          <h2>Instalação e configuração de sistemas operacionais</h2>
-        </div>
+  <!--Fim da seção sobre mim-->
+  <section id="servicos">
+    <!--Inicio da seçao de serviços em redes de computadores-->
+    <h3>Assistência em redes de computadores</h3>
 
-        <div class="itemServico4">
-          <img src="img/SegurancaInformacao64px.png" />
-          <h2>Segurança da informação e backup</h2>
-        </div>
+    <div class="containerServicos">
+      <div class="itemServico1">
+        <img src="img/MontagemPC/96px.png" />
+        <h2>Montagem e manutenção de computadores</h2>
       </div>
 
-      <!--Fim da seçao de serviços em redes de computadores-->
-
-      <!--Inicio da seçao de serviços em desenvolvimento-->
-      <h3>Desenvolvimento e implementação de aplicativos</h3>
-      <div class="containerServicos">
-        <div class="itemServico5">
-          <img src="img/prototipacao/96px.png" />
-          <h2>Prototipação</h2>
-          <h2>de aplicações</h2>
-        </div>
-
-        <div class="itemServico6">
-          <img src="img/bancodeDados/96px.png" />
-          <h2>Estruturação e administração de banco de dados</h2>
-        </div>
-
-        <div class="itemServico7">
-          <img src="img/sistemaDesktop/96px.png" />
-          <h2>Desenvolvimento de sistema Desktop</h2>
-        </div>
-
-        <div class="itemServico8">
-          <img src="img/desenvolverSite/96px.png" />
-          <h2>Desenvolvimento e hospedagem de sites</h2>
-        </div>
+      <div class="itemServico2">
+        <img src="img/Redes/96px.png" />
+        <h2>Implementação e configuraçao de redes</h2>
       </div>
 
-      <!--Fim da seçao de serviços em desenvolvimento-->
-    </section>
+      <div class="itemServico3">
+        <img src="img/configuracaoSO/96px.png" />
+        <h2>Instalação e configuração de sistemas operacionais</h2>
+      </div>
 
-    <!-- Tag hr: cria uma linha -->
-    <!--<hr> -->
+      <div class="itemServico4">
+        <img src="img/SegurancaInformacao64px.png" />
+        <h2>Segurança da informação e backup</h2>
+      </div>
+    </div>
 
-    <!--<h3> </h3>
-    <h4> Portifólio | Desenvolvedor Pedro Rodrigues</h4>
-    <h5> Portifólio | Desenvolvedor Pedro Rodrigues</h5>
-    <h6> Portifólio | Desenvolvedor Pedro Rodrigues</h6> -->
+    <!--Fim da seçao de serviços em redes de computadores-->
 
-    <!--Tag p: Representar o parágrafo -->
+    <!--Inicio da seçao de serviços em desenvolvimento-->
+    <h3>Desenvolvimento e implementação de aplicativos</h3>
+    <div class="containerServicos">
+      <div class="itemServico5">
+        <img src="img/prototipacao/96px.png" />
+        <h2>Prototipação</h2>
+        <h2>de aplicações</h2>
+      </div>
 
-    <!-- Inicio do rodape-->
-    <footer></footer>
-    <!--Fim do rodape-->
-  </body>
+      <div class="itemServico6">
+        <img src="img/bancodeDados/96px.png" />
+        <h2>Estruturação e administração de banco de dados</h2>
+      </div>
+
+      <div class="itemServico7">
+        <img src="img/sistemaDesktop/96px.png" />
+        <h2>Desenvolvimento de sistema Desktop</h2>
+      </div>
+
+      <div class="itemServico8">
+        <img src="img/desenvolverSite/96px.png" />
+        <h2>Desenvolvimento e hospedagem de sites</h2>
+      </div>
+    </div>
+
+    <!--Fim da seçao de serviços em desenvolvimento-->
+  </section>
+
+  <!-- Tag hr: cria uma linha -->
+  <!--<hr> -->
+
+
+
+  <!--Tag p: Representar o parágrafo -->
+
+  <!--Inicio da seção contato-->
+  <section id="contato">
+
+    <div class="containerContato">
+
+      <form name="formularioContato">
+        <h2>Entre em contato</h2>
+
+        <div class="displayContato">
+
+          <div class="dados">
+
+            <label for="nome">Nome: </label>
+            <input type="text" id="idNome" placeholder="Digite seu nome" required="required" name="nome" />
+            <br>
+
+            <label for="tel"> Celular: </label>
+            <input type="tel" id="idFone" placeholder="(11) 99999-9999" name="tel" />
+            <br>
+
+            <label for="email">E-mail: </label>
+            <input type="email" id="idEmail" placeholder="seuemail@email.com" name="email" />
+            <br>
+
+          </div>
+
+          <div class="mensagem">
+            <label>Deixe sua mensagem:</label>
+            <textarea rows="5" cols="33"></textarea>
+            <br>
+
+            <input type="submit" class="enviar" onclick="Enviarmensagem();" value="Enviar mensagem" />
+
+          </div>
+
+          <div class="mapa">
+            <iframe
+              src="https://www.google.com/maps/embed?pb=!1m14!1m8!1m3!1d14619.225474609757!2d-46.7038408!3d-23.6471045!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x94ce50f8ac76dfdb%3A0xc160a87f059ec93d!2sSenac%20Largo%20Treze!5e0!3m2!1spt-BR!2sbr!4v1695048242718!5m2!1spt-BR!2sbr"
+              width="400" height="300" style="border:0;" allowfullscreen="" loading="lazy"
+              referrerpolicy="no-referrer-when-downgrade"></iframe>
+          </div>
+
+      </form>
+
+
+
+
+    </div>
+
+
+  </section>
+  <!--Fim da seção contato-->
+
+
+  <!-- Inicio do rodape-->
+  <footer>
+
+
+  </footer>
+  <!--Fim do rodape-->
+
+  <script src="js/script.js"></script>
+
+  <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.2/dist/js/bootstrap.bundle.min.js"
+    integrity="sha384-C6RzsynM9kWDrMNeT87bh95OGNyZPhcTNXj1NW7RuBCsyN/o0jlpcV8Qyq46cDfL"
+    crossorigin="anonymous"></script>
+</body>
+
 </html>
