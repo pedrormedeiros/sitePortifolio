@@ -70,11 +70,12 @@ body {
 
 }
 
-.apresentacao {
-    display: flex;
-    /* height: 200px; */
 
-}
+    .apresentacao {
+    display: flex;
+    }   /* height: 200px; */
+
+
 
 h1 {
     font-size: 26px;
@@ -354,11 +355,6 @@ textarea {
     margin-left: 90px;
 }
 
-iframe {
-    border-radius: 5px;
-    margin-top: -30px;
-}
-
 .navColor {
     justify-content: center;
     background: linear-gradient(90deg, rgb(79, 81, 180) 34%, rgba(24, 157, 164, 1) 60%);
@@ -381,6 +377,38 @@ iframe {
 .navbar {
     --bs-navbar-toggler-icon-bg: url("data:image/svg+xml,%3csvg xmlns='http://www.w3.org/2000/svg' viewBox='0 0 30 30'%3e%3cpath stroke='rgb%28255, 255, 255' stroke-linecap='round' stroke-miterlimit='10' stroke-width='2' d='M4 7h22M4 15h22M4 23h22'/%3e%3c/svg%3e");
 
+}
+
+footer h6 {
+    color: rgb(5, 178, 190);
+}
+
+footer p {
+    color: white;
+}
+
+.copy {
+    color: white;
+}
+
+.mais {
+    font-family:'Atkinson Hyperlegible', sans-serif; 
+    font-size: 20px;
+}
+
+@media screen and (max-width: 480px) {
+    .apresentacao{
+        flex-direction: column;
+        background: rgb(0, 77, 179);
+    }
+
+    .left img {
+        margin-bottom: 14px;
+    }
+
+    .right {
+        text-align: center;
+    }
 }
 
 
